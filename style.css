@@ -1,0 +1,175 @@
+/** @format */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.911);
+}
+
+/* Sign Up Entry */
+#mainForm {
+  width: 70%;
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formEntry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 60vh;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.877);
+  box-shadow: 6px 6px 29px -18px rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.formEntry > h1 {
+  width: 80%;
+  padding: 1rem;
+  font-size: 4rem;
+  box-shadow: 12px 6px 29px -15px rgb(255, 255, 255);
+  border-radius: 12px;
+}
+
+.formEntry > h3 {
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 0;
+  letter-spacing: 5px;
+}
+
+.formEntry > button {
+  padding: 1rem;
+  border-radius: 9px;
+  box-shadow: 6px 6px 29px -12px rgb(255, 255, 255);
+  outline: none;
+  width: 80%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.9px;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+.formEntry > button:hover {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+
+/* Pop Up Design Start */
+.pop_up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.377);
+  top: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  transition: 2s ease-in-out;
+  z-index: 100;
+}
+
+.popup_content {
+  background-color: rgb(255, 255, 255);
+
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.popup_content form {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup_content form label {
+  display: block;
+  margin: 0.6rem 0;
+  font-size: 1.2rem;
+}
+
+.popup_content form input {
+  margin: 0.6rem 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.popup_content button {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.8rem;
+  letter-spacing: 4.8px;
+  margin: 1rem 0.8rem auto;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: rgba(255, 255, 255, 0.685);
+  box-shadow: 6px 6px 29px -4px black;
+  border-radius: 9px;
+  position: relative;
+  outline: none;
+}
+
+.popup_content button:hover {
+  background-color: rgba(0, 0, 0, 0.705);
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.cross {
+  position: absolute;
+  z-index: 100;
+  top: -30px;
+  right: -35px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Pop Up Design End */
+
+/* Bubble Design Start */
+.bubble {
+  animation: bubbleUp 3s infinite;
+}
+
+@keyframes bubbleUp {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.5px;
+  }
+  to {
+    transform: translateY(-340px);
+    opacity: 0;
+  }
+}

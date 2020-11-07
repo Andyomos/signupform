@@ -166,7 +166,7 @@ body {
     transform: translateX(0);
   }
   50% {
-    opacity: 0.5px;
+    opacity: 0.6px;
   }
   to {
     transform: translateY(-340px);

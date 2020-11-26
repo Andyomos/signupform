@@ -168,6 +168,9 @@ body {
   50% {
     opacity: 0.6px;
   }
+  75% {
+    opacity: 0.3px;
+  }
   to {
     transform: translateY(-340px);
     opacity: 0;
